@@ -1,10 +1,3 @@
-//
-//  NotebookView.swift
-//  Tasker
-//
-//  Created by Drew Kringel on 12/1/24.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -16,12 +9,11 @@ struct NotebookView: View {
     
     var body: some View {
         VStack {
-            // Header
             Text("My List")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.top)
-            
+        
             Divider()
                 .padding(.horizontal)
             
