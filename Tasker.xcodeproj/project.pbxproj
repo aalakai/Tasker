@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7892D30E2CFD304A00139EFD /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7892D3082CFD2E8F00139EFD /* SwiftData.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7894C8912CFC562E004E9DFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7892D3072CFD2E8900139EFD /* libswiftDataDetection.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftDataDetection.tbd; path = usr/lib/swift/libswiftDataDetection.tbd; sourceTree = SDKROOT; };
+		7892D3082CFD2E8F00139EFD /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
 		7894C87E2CFC562C004E9DFC /* Tasker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7894C8902CFC562E004E9DFC /* TaskerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7894C89A2CFC562E004E9DFC /* TaskerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7892D30E2CFD304A00139EFD /* SwiftData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7892D3062CFD2E8900139EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7892D3082CFD2E8F00139EFD /* SwiftData.framework */,
+				7892D3072CFD2E8900139EFD /* libswiftDataDetection.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7894C8752CFC562C004E9DFC = {
 			isa = PBXGroup;
 			children = (
 				7894C8802CFC562C004E9DFC /* Tasker */,
 				7894C8932CFC562E004E9DFC /* TaskerTests */,
 				7894C89D2CFC562E004E9DFC /* TaskerUITests */,
+				7892D3062CFD2E8900139EFD /* Frameworks */,
 				7894C87F2CFC562C004E9DFC /* Products */,
 			);
 			sourceTree = "<group>";
